@@ -1,0 +1,175 @@
+/* Styles de base */
+body {
+  background-color: #007B8E;
+  font-family: "Montserrat", sans-serif;
+  background-image: url(/assets/img/pngegg.png);
+}
+
+/* Styles pour le header et la navbar */
+header {
+  background-color: rgba(0, 136, 169, 1);
+  padding: 10px 0;
+}
+.logo {
+  cursor: pointer;
+  font-size: 2em;
+  color: rgba(0, 136, 169, 1);
+  font-family: "esthetique";
+}
+.logo:hover {
+  text-decoration: none;
+  color: #007B8E;
+}
+.navbar {
+  padding: 0;
+}
+.navbar a {
+  color: rgba(0, 136, 169, 1);
+  text-decoration: none;
+}
+.navbar a:hover {
+  background-color: rgba(0, 136, 169, 1);
+  color: rgb(255, 255, 255);
+}
+.cta {
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.cta:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* Styles pour le container */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 1s ease;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Styles pour les titres */
+h1, h3 {
+  color: #007B8E;
+  font-weight: bold;
+  text-align: center;
+}
+h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+
+/* Styles pour les formulaires */
+.form-group {
+  animation: slideInLeft 1s ease;
+}
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.btn-primary {
+  background-color: #007B8E;
+  border-color: #007B8E;
+  transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #005A6B;
+  border-color: #005A6B;
+}
+.signature-container {
+  position: relative;
+  background-color: #e1dfdf;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.btn-clear-signature {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #f44336;
+  border-color: #f44336;
+}
+.btn-clear-signature:hover {
+  background-color: #d32f2f;
+  border-color: #d32f2f;
+}
+
+/* Styles pour les tables */
+.table {
+  margin-bottom: 30px;
+}
+.table th, .table td {
+  vertical-align: middle;
+}
+.table thead th {
+  background-color: #007B8E;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+.table tbody td {
+  text-align: center;
+}
+.table-bordered th, .table-bordered td {
+  border: 1px solid #007B8E;
+}
+.table-bordered thead th, .table-bordered tbody td {
+  border-color: #007B8E;
+}
+
+/* Ajustement des textareas */
+textarea.form-control {
+  resize: vertical;
+}
+
+/* Styles pour les petits écrans */
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%;
+    margin: 10px;
+    padding: 10px;
+  }
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+  .cta {
+    padding: 8px 20px;
+  }
+  .navbar {
+    background-color: transparent;
+    padding: 10px;
+  }
+  .navbar a:hover {
+    background-color: rgba(0, 136, 169, 1);
+    color: #fff;
+  }
+}
